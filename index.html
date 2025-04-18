@@ -5,10 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dishan Shaikh | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      opacity: 0;
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .btn {
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background-color: #333;
+      color: #fff;
+    }
+
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+  </style>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero animate-on-load" data-aos="fade-up">
     <div>
       <h1>Hello, I'm <span class="highlight">Dishan Shaikh</span></h1>
       <p>Front-End Developer & Java Enthusiast | Building elegant UIs & solving DSA problems.</p>
@@ -17,7 +60,7 @@
   </section>
 
   <!-- About Section -->
-  <section class="about" id="about">
+  <section class="about animate-on-load" id="about" data-aos="fade-right">
     <div class="container">
       <img src="profile.jpg" alt="Dishan Shaikh" class="profile-img">
       <div>
@@ -28,7 +71,7 @@
   </section>
 
   <!-- Experience Section -->
-  <section class="experience" id="experience">
+  <section class="experience animate-on-load" id="experience" data-aos="fade-up">
     <h2>Professional Experience</h2>
     <div class="container">
       <div class="experience-item">
@@ -43,7 +86,7 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="skills" id="skills">
+  <section class="skills animate-on-load" id="skills" data-aos="fade-left">
     <h2>Skills</h2>
     <div class="skill-grid">
       <div>Java</div>
@@ -66,20 +109,20 @@
   </section>
 
   <!-- Projects Section -->
-  <section class="projects" id="projects">
+  <section class="projects animate-on-load" id="projects" data-aos="fade-up">
     <h2>Projects</h2>
     <div class="project-grid">
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in">
         <h3>Online Billing System</h3>
         <p>Built a web-based billing system using Java, JSP, AJAX, HTML, CSS, and SQL. Implemented real-time calculations and product management features for enhanced efficiency.</p>
         <a href="#">View Project</a>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
         <h3>Array Insight</h3>
         <p>JavaFX-based application to visually demonstrate array operations, improving conceptual clarity with interactive visual feedback.</p>
         <a href="#">View Project</a>
       </div>
-      <div class="project-card">
+      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
         <h3>Personal Portfolio Website</h3>
         <p>A fully responsive portfolio site designed and developed using HTML5 and CSS3, showcasing my projects, skills, experience, and contact information in a modern layout.</p>
         <a href="#">View Project</a>
@@ -88,7 +131,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact" id="contact">
+  <section class="contact animate-on-load" id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Dishan Shaikh" required />
@@ -106,5 +149,11 @@
   <footer>
     <p>&copy; 2025 Dishan Shaikh. All rights reserved.</p>
   </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
