@@ -1,272 +1,102 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dishan Shaikh | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    section {
-      opacity: 0;
-      animation: fadeInUp 0.8s ease-out forwards;
-      animation-delay: 0.3s;
-    }
-
-    .btn {
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      background-color: #333;
-      color: #fff;
-    }
-
-    .project-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-  </style>
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishan Shaikh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero animate-on-load" data-aos="fade-up">
-    <div>
-      <h1>Hello, I'm <span class="highlight">Dishan Shaikh</span></h1>
-      <p>Front-End Developer & Java Enthusiast | Building elegant UIs & solving DSA problems.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="hero" style="background: linear-gradient(135deg, #EEF2FF, #F9FAFB); padding: 100px 20px; text-align: center;">
+        <img src="profile.jpg" alt="Dishan Shaikh" class="profile-img" />
+        <h1>Hi, I'm Dishan Shaikh</h1>
+        <p id="typing-text" style="font-size: 1.2rem; color: #6B7280; margin-top: 10px;"></p>
 
-  <!-- About Section -->
-  <section class="about animate-on-load" id="about" data-aos="fade-right">
-    <div class="container">
-      <img src="profile.jpg" alt="Dishan Shaikh" class="profile-img">
-      <div>
+        <div style="margin: 20px 0;">
+            <a href="https://www.linkedin.com/in/dishan-shaikh-410569235" target="_blank" style="margin: 0 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="32">
+            </a>
+            <a href="https://github.com/Shaikhdishan" target="_blank" style="margin: 0 10px;">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="32">
+            </a>
+            <a href="mailto:dishanshaikh.skn.it@gmail.com" style="margin: 0 10px;">
+                <img src="https://img.icons8.com/ios-filled/50/000000/new-post.png" alt="Email" width="32">
+            </a>
+        </div>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" style="text-align: center; padding: 60px 20px;">
         <h2>About Me</h2>
-        <p>I'm a final-year Information Technology student at SKNCOE, Pune, with a strong interest in front-end development, Java, and problem-solving. I've interned at Kutumb Aspiration and am passionate about creating seamless digital experiences. I also actively contribute to tech communities as the Co-Leader of GDSC SKNCOE.</p>
-      </div>
-    </div>
-  </section>
+        <p>I'm a passionate Front-End Developer with a strong foundation in Java and problem-solving. I love building web applications and continuously improving my skills to create seamless user experiences.</p>
+    </section>
 
-  <!-- Experience Section -->
-  <section class="experience animate-on-load" id="experience" data-aos="fade-up">
-    <h2>Professional Experience</h2>
-    <div class="container">
-      <div class="experience-item">
-        <h3>Front-End Developer Intern</h3>
-        <h4>Kutumb Aspiration (Jan 2024 – Apr 2024)</h4>
-        <ul>
-          <li>Revamped navigation menu and footer using HTML5, CSS3, and JavaScript to enhance UX and accessibility.</li>
-          <li>Led to a 15% increase in user engagement through better UI responsiveness.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: #F1F5F9; padding: 60px 20px;">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div>JavaScript</div>
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>React</div>
+            <div>Node.js</div>
+            <div>Java</div>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section class="skills animate-on-load" id="skills" data-aos="fade-left">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <div>Java</div>
-      <div>JavaScript</div>
-      <div>Python</div>
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>Bootstrap</div>
-      <div>SQL</div>
-      <div>MySQL</div>
-      <div>Git</div>
-      <div>GitHub</div>
-      <div>Postman</div>
-      <div>VS Code</div>
-      <div>Agile</div>
-      <div>API Integration</div>
-      <div>Data Structures</div>
-      <div>Algorithms</div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" style="padding: 60px 20px;">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Online Billing System</h3>
+                <p>A web-based system for billing and product management using Java, JSP, AJAX, and SQL.</p>
+            </div>
+            <div class="project-card">
+                <h3>Array Insight</h3>
+                <p>A JavaFX application to visualize array operations and methods interactively.</p>
+            </div>
+            <div class="project-card">
+                <h3>Personal Portfolio</h3>
+                <p>This portfolio website that showcases my skills, projects, and experiences!</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="projects animate-on-load" id="projects" data-aos="fade-up">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card" data-aos="zoom-in">
-        <h3>Online Billing System</h3>
-        <p>Built a web-based billing system using Java, JSP, AJAX, HTML, CSS, and SQL. Implemented real-time calculations and product management features for enhanced efficiency.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-        <h3>Array Insight</h3>
-        <p>JavaFX-based application to visually demonstrate array operations, improving conceptual clarity with interactive visual feedback.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
-        <h3>Personal Portfolio Website</h3>
-        <p>A fully responsive portfolio site designed and developed using HTML5 and CSS3, showcasing my projects, skills, experience, and contact information in a modern layout.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: #F1F5F9; padding: 60px 20px; text-align: center;">
+        <h2>Contact Me</h2>
+        <form action="mailto:dishanshaikh.skn.it@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact animate-on-load" id="contact" data-aos="fade-up">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Dishan Shaikh" required />
-      <input type="email" placeholder="dishanshaikh.skn.it@gmail.com" required />
-      <textarea placeholder="Your message..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Email: <a href="mailto:dishanshaikh.skn.it@gmail.com">dishanshaikh.skn.it@gmail.com</a></p>
-    <p>Phone: +91-7263086497</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/dishan-shaikh-410569235/" target="_blank">linkedin.com/in/dishan-shaikh</a></p>
-    <p>Location: Pune, Maharashtra, India</p>
-  </section>
+    <!-- Footer Section -->
+    <footer style="background-color: #4F46E5; color: white; text-align: center; padding: 30px 0;">
+        <p>&copy; 2025 Dishan Shaikh</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Dishan Shaikh. All rights reserved.</p>
-  </footer>
+    <!-- Script for Typing Animation -->
+    <script>
+        const text = "Front-End Developer | Java Enthusiast | Problem Solver";
+        const typingTarget = document.getElementById("typing-text");
+        let index = 0;
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+        function typeEffect() {
+            if (index < text.length) {
+                typingTarget.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, 50);
+            }
+        }
+
+        window.onload = typeEffect;
+    </script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dishan Shaikh | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div>
-      <h1>Hello, I'm <span class="highlight">Dishan Shaikh</span></h1>
-      <p>Front-End Developer & Java Enthusiast | Building elegant UIs & solving DSA problems.</p>
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="container">
-      <img src="profile.jpg" alt="Dishan Shaikh" class="profile-img">
-      <div>
-        <h2>About Me</h2>
-        <p>I'm a final-year Information Technology student at SKNCOE, Pune, with a strong interest in front-end development, Java, and problem-solving. I've interned at Kutumb Aspiration and am passionate about creating seamless digital experiences. I also actively contribute to tech communities as the Co-Leader of GDSC SKNCOE.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="experience" id="experience">
-    <h2>Professional Experience</h2>
-    <div class="container">
-      <div class="experience-item">
-        <h3>Front-End Developer Intern</h3>
-        <h4>Kutumb Aspiration (Jan 2024 – Apr 2024)</h4>
-        <ul>
-          <li>Revamped navigation menu and footer using HTML5, CSS3, and JavaScript to enhance UX and accessibility.</li>
-          <li>Led to a 15% increase in user engagement through better UI responsiveness.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <div>Java</div>
-      <div>JavaScript</div>
-      <div>Python</div>
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>Bootstrap</div>
-      <div>SQL</div>
-      <div>MySQL</div>
-      <div>Git</div>
-      <div>GitHub</div>
-      <div>Postman</div>
-      <div>VS Code</div>
-      <div>Agile</div>
-      <div>API Integration</div>
-      <div>Data Structures</div>
-      <div>Algorithms</div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Online Billing System</h3>
-        <p>Built a web-based billing system using Java, JSP, AJAX, HTML, CSS, and SQL. Implemented real-time calculations and product management features for enhanced efficiency.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Array Insight</h3>
-        <p>JavaFX-based application to visually demonstrate array operations, improving conceptual clarity with interactive visual feedback.</p>
-        <a href="#">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p>A fully responsive portfolio site designed and developed using HTML5 and CSS3, showcasing my projects, skills, experience, and contact information in a modern layout.</p>
-        <a href="#">View Project</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Dishan Shaikh" required />
-      <input type="email" placeholder="dishanshaikh.skn.it@gmail.com" required />
-      <textarea placeholder="Your message..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Email: <a href="mailto:dishanshaikh.skn.it@gmail.com">dishanshaikh.skn.it@gmail.com</a></p>
-    <p>Phone: +91-7263086497</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/dishan-shaikh-410569235/" target="_blank">linkedin.com/in/dishan-shaikh</a></p>
-    <p>Location: Pune, Maharashtra, India</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Dishan Shaikh. All rights reserved.</p>
-  </footer>
-</body>
-</html>
->>>>>>> 81479eceb0814988f797ed9e877b70abecf564ff
